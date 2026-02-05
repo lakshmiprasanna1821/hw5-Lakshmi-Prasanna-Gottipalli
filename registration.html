@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body style=" background-color: cyan;" >
+
+<!-- Registration Form -->
+<h2>Tour Registration Form</h2>
+<form  class="form-box">
+    <!-- Text Input -->
+    <label for="name">Full Name:
+        <span style="color: red; font-weight: bold;">*</span>
+    </label>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Email:
+        <span style="color: red; font-weight: bold;">*</span>
+    </label>
+    <input type="email" id="email" name="email" required><br><br>
+
+
+    <!-- Textarea -->
+    <label for="comments">Address (Optional):</label><br>
+    <textarea id="address" name="address" rows="4" cols="40"></textarea><br><br>
+
+    <!-- Radio Buttons -->
+    <p>Preferred Accommodation:</p>
+    <input type="radio" id="hotel" name="accommodation" value="Hotel" required>
+    <label for="hotel">Hotel</label>
+    <input type="radio" id="guesthouse" name="accommodation" value="Guesthouse">
+    <label for="guesthouse">Guesthouse</label><br><br>
+
+    <!-- Dropdown -->
+    <label for="days">Number of Days:</label>
+    <select id="days" name="days" required>
+        <option value="1">1 Day</option>
+        <option value="2">2 Days</option>
+        <option value="3">3 Days</option>
+        <option value="4">4 Days</option>
+        <option value="5">5 Days</option>
+        <option value="6">6 Days</option>
+        <option value="7">7 Days</option>
+    </select><br><br>
+
+    <!-- Textarea -->
+    <label for="comments">Special Requests (Optional):</label><br>
+    <textarea id="comments" name="comments" rows="4" cols="40"></textarea><br><br>
+
+    <!-- Submit Button -->
+    <input type="submit" value="Submit">
+</form>
+</table>
+</body>
+</html>
